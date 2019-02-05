@@ -27,6 +27,17 @@ var issueSchema = new Schema({
 var Issue = mongoose.model('Issue', issueSchema);
 
 module.exports = function (app) {
+  
+  app.route('/api/projects')
+    .get((req,res) => {
+      Issue.find({}, (err, data) => {
+        if (err) throw err;
+        var projects = [];
+        data.forEach(x => projects.push(x.project))
+        projects = [...new Set(projects)]
+        res.json(projects)
+      })
+    })
 
   app.route('/api/issues/:project')
   
