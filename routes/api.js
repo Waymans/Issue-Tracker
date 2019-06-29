@@ -1,14 +1,5 @@
-/*
-*
-*
-*       Complete the API routing below
-*
-*
-*/
-
 'use strict';
 
-var expect = require('chai').expect;
 var mongoose = require('mongoose');
 mongoose.connect(process.env.DB);
 
