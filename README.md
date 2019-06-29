@@ -28,3 +28,34 @@ Serv is made with the following:
 <code>/api/issues/{project}?open=true&amp;assigned_to=Joe</code><br>
 <h3>Example return:</h3>
 <code>[{"_id":"5871dda29faedc3491ff93bb", "issue_title":"Fix error in posting data", "issue_text":"When we post data it has an error.", "created_on":"2017-01-08T06:35:14.240Z", "updated_on":"2017-01-08T06:35:14.240Z", "created_by":"Joe", "assigned_to":"Joe", "open":true, "status_text":"In QA"},...]</code>
+
+
+## How to use locally
+Make sure to have node and npm installed on your computer.
+
+Clone the repo.
+
+> <code>git clone https://github.com/Waymans/Issue-Tracker folder-name</code>
+
+Change into the folder directory.
+
+> <code>cd folder-name</code>
+
+Install the dependencies.
+
+> <code>npm install</code>
+
+Once installed, start the server.
+
+> <code>node server</code>
+
+Open browser at:
+
+> <code>localhost:3000</code>
+
+(Optional) - To run tests:
+
+> <code>npm run tests</code>
+
+## Authors
+Waylan Hedine
